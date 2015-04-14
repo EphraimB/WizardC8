@@ -443,20 +443,23 @@ Letter_z:  ; 8x5
     .db %00100000
     .db %01111100
 
-Symbol_Comma:  ; 8x4
+Symbol_Comma:  ; 8x5
     .db %00000000
     .db %00000000
-    .db %00001000
+    .db %00100000
+    .db %00010000
+    .db %00100000
+
+Symbol_SemiColon:  ; 8x5
+    .db %00010000
+    .db %00000000
+    .db %00000000
+    .db %00000000
     .db %00010000
 
-Symbol_SemiColon:  ; 8x4
-    .db %00010000
-    .db %00000000
-    .db %00000000
-    .db %00010000
-
-Symbol_DollarSign:  ; 8x4
+Symbol_DollarSign:  ; 8x5
     .db %00011100
-    .db %11111000
-    .db %01011100  ; Needs improvement
-    .db %00111110
+    .db %00101000
+    .db %00011100
+    .db %00001010
+    .db %00011110
