@@ -107,28 +107,32 @@ Letter_D:  ; 8x4
     .db %00010100
     .db %00011000
 
-Letter_E:  ; 8x4
+Letter_E:  ; 8x5
     .db %00011100
     .db %00010000
-    .db %00011100  ; Needs improvement
+    .db %00011100
+    .db %00010000
     .db %00011100
 
-Letter_F:  ; 8x4
+Letter_F:  ; 8x5
     .db %00011100
     .db %00010000
     .db %00011100
+    .db %00010000
     .db %00010000
 
-Letter_G:  ; 8x4
+Letter_G:  ; 8x5
     .db %00011100
     .db %00100000
-    .db %00101100
-    .db %00011000
+    .db %01001110
+    .db %00100010
+    .db %00011100
 
-Letter_H:  ; 8x4
+Letter_H:  ; 8x5
     .db %00010010
     .db %00010010
     .db %00011110
+    .db %00010010
     .db %00010010
 
 Letter_I:  ; 8x4
