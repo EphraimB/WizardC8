@@ -1,4 +1,4 @@
-.org $9D93
+.org $9d93
     .db $bb, $6d
 
 Start:
