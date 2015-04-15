@@ -2,6 +2,9 @@
     .db $bb, $6d
 
 Start:
+    ld hl, picdata
+    ld de, screenBuffer+(19 * 12)
+    ld bc, 8 * 12
 
 ; I'm using ionfastCopy as a placeholder
 
