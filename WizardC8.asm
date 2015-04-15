@@ -2,7 +2,7 @@
     .db $bb, $6d
 
 Start:
-    ld hl, picdata
+    ld hl, Number_0
     ld de, screenBuffer+(19 * 12)
     ld bc, 8 * 12
 
