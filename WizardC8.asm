@@ -8,7 +8,7 @@ Start:
 
 ; I'm using ionfastCopy as a placeholder
 
-.define gbuf screenBuffer                   ;what ion.inc defines the screen buffer as
+#define gbuf screenBuffer                   ;what ion.inc defines the screen buffer as
 
 ;code for ionfastcopy directly from ionf.z80
 
