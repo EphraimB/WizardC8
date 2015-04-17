@@ -2,9 +2,11 @@
     .db $bb, $6d
 
 Start:
-    ld hl, Number_0
-    ld de, screenBuffer+(19 * 12)
+    ld a, (screenBuffer + 0)
     ld bc, 12 * 64
+    ld de, screenBuffer+(19 * 12)
+    ld hl, Number_0
+
 
 ; I'm using ionfastCopy as a placeholder
 
