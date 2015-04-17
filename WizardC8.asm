@@ -5,7 +5,6 @@ Start:
     ld a, (screenBuffer + 0)
     ld bc, 12 * 64
     ld de, screenBuffer+(19 * 12)
-    ld hl, Number_0
 
 
 ; I'm using ionfastCopy as a placeholder
@@ -45,6 +44,12 @@ fastCopyLoop:
     cp $2B + 1                             ; 7
     jr nz, fastCopyAgain                   ; 10/1
 
+Loop:
+    ld hl, Number_0
+    
+    jr Loop
+
+exit:
     ret                                    ; 10
     
 ;-----Buffers-----
