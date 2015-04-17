@@ -4,7 +4,7 @@
 Start:
     ld hl, Number_0
     ld de, screenBuffer+(19 * 12)
-    ld bc, 5 * 12
+    ld bc, 12 * 64
 
 ; I'm using ionfastCopy as a placeholder
 
