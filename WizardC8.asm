@@ -2,19 +2,16 @@
     .db $bb, $6d
 
 Start:
-    ld a, (screenBuffer + 0)
-    ld bc, 12 * 64
-    ld de, screenBuffer+(5 * 20)
-    ld hl, Number_0
-    
-    in a, ($10)
-    out ($11), a
+    ld hl, screenBuffer
 
 
 
     ret
     
 ;-----Buffers-----
+
+screenBufferStart:
+    .db 0
 
 screenBuffer:    ; 12*64 Buffer
     .db 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
@@ -81,6 +78,9 @@ screenBuffer:    ; 12*64 Buffer
     .db 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
     .db 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
     .db 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+
+screenBufferLength:
+    .db 768
 
 
 
