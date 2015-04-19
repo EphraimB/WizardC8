@@ -2,7 +2,7 @@
     .db $bb, $6d
 
 Start:
-    ld hl, screenBufferStart
+    ld hl, screenBuffer
 
 
 
