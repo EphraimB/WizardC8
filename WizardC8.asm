@@ -4,7 +4,7 @@
 Start:
     ld a, (screenBuffer + 0)
     ld bc, 12 * 64
-    ld de, screenBuffer+(19 * 12)
+    ld de, screenBuffer+(5 * 20)
 
 
 
