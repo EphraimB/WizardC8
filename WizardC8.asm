@@ -6,6 +6,9 @@ Start:
     ld bc, 12 * 64
     ld de, screenBuffer+(5 * 20)
     ld hl, Number_0
+    
+    in a, ($10)
+    out ($11), a
 
 
 
