@@ -3,6 +3,7 @@
 
 Start:
     ld hl, screenBuffer
+    ld hl, (screenBufferStart)
 
 
 
